@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
+/*   By: shuu <shuu@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 15:03:04 by shuu              #+#    #+#             */
-/*   Updated: 2025/11/30 17:54:22 by sumedai          ###   ########.fr       */
+/*   Updated: 2025/11/30 18:03:26 by shuu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void ClapTrap::attack(const std::string& target) {
 void ClapTrap::takeDamage(unsigned int amount) {
 
     if (this->_hits > 0) {
-        std::cout << _name << " takes " << amount << " of dameges" << std::endl;
+        std::cout << this->_name << " takes " << amount << " of damages" << std::endl;
         if (this->_hits < amount)
             this->_hits = 0;
         else
