@@ -6,7 +6,7 @@
 /*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 21:57:36 by shuu              #+#    #+#             */
-/*   Updated: 2025/11/30 13:43:11 by sumedai          ###   ########.fr       */
+/*   Updated: 2025/11/30 14:17:43 by sumedai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,5 @@ void ScavTrap::guardGate(void) {
 		std::cout << "Hit points are empty." << std::endl;
 		return ;
 	}
-	std::cout << _name << " is now gatekeeper!!!!"<< std::endl;
+	std::cout << this->_name << " is now gatekeeper!!!!"<< std::endl;
 }

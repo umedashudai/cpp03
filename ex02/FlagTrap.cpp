@@ -6,7 +6,7 @@
 /*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 23:39:46 by shuu              #+#    #+#             */
-/*   Updated: 2025/11/30 13:46:52 by sumedai          ###   ########.fr       */
+/*   Updated: 2025/11/30 14:14:16 by sumedai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,5 +60,5 @@ void FlagTrap::highFivesGuys(void) {
 		std::cout << "Hit points are empty." << std::endl;
 		return ;
 	}
-	std::cout << this->_name << "ate FiveGuys!!!!"<< std::endl;
+	std::cout << this->_name << " requests a high five from everyone!"<< std::endl;
 }
