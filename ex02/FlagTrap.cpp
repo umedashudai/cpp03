@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FlagTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shuu <shuu@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 23:39:46 by shuu              #+#    #+#             */
-/*   Updated: 2025/11/27 15:46:46 by shuu             ###   ########.fr       */
+/*   Updated: 2025/11/30 13:46:52 by sumedai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ FlagTrap::~FlagTrap(void) {
 void FlagTrap::highFivesGuys(void) {
 
     	if (this->_hits <= 0) {
-		std::cout << "Hit points are empty" << std::endl;
+		std::cout << "Hit points are empty." << std::endl;
 		return ;
 	}
 	std::cout << this->_name << "ate FiveGuys!!!!"<< std::endl;

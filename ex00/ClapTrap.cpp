@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shuu <shuu@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: sumedai <sumedai@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/26 15:03:04 by shuu              #+#    #+#             */
-/*   Updated: 2025/11/27 22:37:08 by shuu             ###   ########.fr       */
+/*   Updated: 2025/11/30 13:37:46 by sumedai          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 ClapTrap::ClapTrap(void) : _name("default"), _hits(10), _energy(10), _damage(0) {
 
-    std::cout << "Clap Default Constructor" << std::endl;
+    std::cout << "ClapTrap Default Constructor" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hits(10), _energy(10), _damage(0) {
 
-    std::cout << "Clap Constructor" << std::endl;
+    std::cout << "ClapTrap Constructor" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy) : _name("default"), _hits(10), _energy(10), _damage(0) {
 
-    std::cout << "Clap Copy Constructor" << std::endl;
+    std::cout << "ClapTrap Copy Constructor" << std::endl;
 
     if (this != &copy)
         *this = copy;
@@ -49,11 +49,11 @@ ClapTrap::~ClapTrap(void) {
 void ClapTrap::attack(const std::string& target) {
 
     if (this->_hits <= 0) {
-        std::cout << "hit points are already empty" << std::endl;
+        std::cout << "Hit points are already empty." << std::endl;
         return ;
     }
     if (this->_energy > 0) {
-        std::cout << "ClapTrap " << this->_name << " attacks " << target << " causing " << this->_damage << " points of damage!" << std::endl;
+        std::cout << "ClapTrap " << this->_name << " attacks " << target << ", causing " << this->_damage << " points of damage!" << std::endl;
         this->_energy--;
     } else  
         std::cout << "ClapTrap " << this->_name << " doesn't already have energy points." << std::endl;
@@ -68,14 +68,14 @@ void ClapTrap::takeDamage(unsigned int amount) {
         else
             this->_hits -= amount;
     } else
-        std::cout << "hit points are already empty." << std::endl;
+        std::cout << "Hit points are already empty." << std::endl;
         
 }
 
 void ClapTrap::beRepaired(unsigned int amount) {
 
     if (this->_hits <= 0) {
-        std::cout << "hit points are already empty" << std::endl;
+        std::cout << "Hit points are already empty." << std::endl;
         return ;
     }
     if (this->_energy > 0) {
